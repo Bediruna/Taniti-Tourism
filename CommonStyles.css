@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer {
+    background-color: orangered;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orangered;
+}
+
+nav li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: cornflowerblue;
+}
+
+nav .active {
+    background-color: deepskyblue;
+}
+
+.topImage {
+    width: 100%;
+}
+
+.mainContentDiv {
+    padding: 40px 100px;
+}
+
+.mainContentDiv p {
+    font-size: 1.5em;
+}
+
+.listBox {
+    border: 1px solid black;
+    padding: 50px;
+    display: flex;
+    margin: 20px 0px
+}
+
+.listBox img {
+    height: 300px;
+    margin-right: 50px;
+}
+
+.topDiv {
+    display: table-cell;
+    position: relative;
+    width: auto;
+}
+
+.welcomeText {
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+@media (max-width:970px) {
+    .listBox {
+        display: block;
+    }
+
+    .welcomeText {
+        font-size: 3em;
+    }
+
+    .mainContentDiv {
+        padding: 40px;
+    }
+}
+
+@media (max-width:830px) {
+    .welcomeText {
+        font-size: 2em;
+    }
+
+    .listBox img {
+        height: 200px;
+    }
+}
+
+@media (max-width:385px) {
+
+
+    .listBox img {
+        height: 150px;
+    }
+
+    .welcomeText {
+        font-size: 1em;
+    }
+}
